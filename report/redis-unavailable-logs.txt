@@ -1,0 +1,199 @@
+app-1  | 2026-11-16 10:39:34,745 listening port=8000 storage=redis
+app-1    | 2026-11-16 10:39:39,671 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:39:49,730 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:39:58,826 http 192.168.65.1 "GET / HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:39:59,786 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+redis-1  | Starting Redis Server
+redis-1  | 1:C 16 Nov 2026 10:39:29.090 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 16 Nov 2026 10:39:29.090 * Redis version=8.10.3, bits=64, commit=00000000, modified=1, pid=1, just started
+redis-1  | 1:C 16 Nov 2026 10:39:29.090 * Configuration loaded
+redis-1  | 1:M 16 Nov 2026 10:39:29.090 * monotonic clock: ARM CNTVCT @ 24 ticks/us
+redis-1  | 1:M 16 Nov 2026 10:39:29.091 * Running mode=standalone, port=6379.
+redis-1  | 1:M 16 Nov 2026 10:39:29.091 * <bf> RedisBloom version 8.10.1 (Git=unknown)
+redis-1  | 1:M 16 Nov 2026 10:39:29.091 * <bf> Registering configuration options: [
+redis-1  | 1:M 16 Nov 2026 10:39:29.091 * <bf> 	{ bf-error-rate       :      0.01 }
+redis-1  | 1:M 16 Nov 2026 10:39:29.091 * <bf> 	{ bf-initial-size     :       100 }
+redis-1  | 1:M 16 Nov 2026 10:39:29.091 * <bf> 	{ bf-expansion-factor :         2 }
+redis-1  | 1:M 16 Nov 2026 10:39:29.091 * <bf> 	{ cf-bucket-size      :         2 }
+redis-1  | 1:M 16 Nov 2026 10:39:29.091 * <bf> 	{ cf-initial-size     :      1024 }
+app-1    | 2026-11-16 10:40:09,859 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:40:19,926 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+redis-1  | 1:M 16 Nov 2026 10:39:29.091 * <bf> 	{ cf-max-iterations   :        20 }
+redis-1  | 1:M 16 Nov 2026 10:39:29.091 * <bf> 	{ cf-expansion-factor :         1 }
+redis-1  | 1:M 16 Nov 2026 10:39:29.091 * <bf> 	{ cf-max-expansions   :        32 }
+redis-1  | 1:M 16 Nov 2026 10:39:29.091 * <bf> ]
+redis-1  | 1:M 16 Nov 2026 10:39:29.091 * Module 'bf' loaded from /usr/local/lib/redis/modules//redisbloom.so
+redis-1  | 1:M 16 Nov 2026 10:39:29.092 * <search> search-workers default: 14 (min of MAX_WORKER_THREADS=16 and CPU cores)
+redis-1  | 1:M 16 Nov 2026 10:39:29.092 * <search> Redis version found by RedisSearch : 8.10.3 - oss
+redis-1  | 1:M 16 Nov 2026 10:39:29.092 * <search> RediSearch version 8.10.1 (Git=)
+redis-1  | 1:M 16 Nov 2026 10:39:29.092 * <search> gc: ON, prefix min length: 2, min word length to stem: 4, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, oom policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, default scorer: BM25STD, 
+redis-1  | 1:M 16 Nov 2026 10:39:29.092 * <search> Initialized thread pools!
+redis-1  | 1:M 16 Nov 2026 10:39:29.092 * <search> Enabled workers threadpool of size 14
+redis-1  | 1:M 16 Nov 2026 10:39:29.092 * <search> Subscribe to config changes
+redis-1  | 1:M 16 Nov 2026 10:39:29.092 * <search> Subscribe to cluster slot migration events
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <search> Subscribe to cluster topology change events
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <search> Enabled role change notification
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <search> Cluster configuration: AUTO partitions, type: 0, coordinator timeout: 0ms
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * Module 'search' loaded from /usr/local/lib/redis/modules//redisearch.so
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> RedisTimeSeries version 81001, git_sha=
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> Redis version found by RedisTimeSeries : 8.10.3 - oss
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> Registering configuration options: [
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> 	{ ts-compaction-policy   :              }
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> 	{ ts-num-threads         :            3 }
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> 	{ ts-libmr-protocol      :     INTERNAL }
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> 	{ ts-retention-policy    :            0 }
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> 	{ ts-duplicate-policy    :        block }
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> 	{ ts-chunk-size-bytes    :         4096 }
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> 	{ ts-encoding            :   compressed }
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> 	{ ts-ignore-max-time-diff:            0 }
+app-1    | 2026-11-16 10:40:22,892 http 192.168.65.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:40:23,192 storage_unavailable: ConnectionError
+app-1    | 2026-11-16 10:40:23,193 http 192.168.65.1 "GET /readyz HTTP/1.1" 503 -
+app-1    | 2026-11-16 10:40:29,997 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:40:32,065 storage_unavailable: ConnectionError
+app-1    | 2026-11-16 10:40:32,065 http 192.168.65.1 "POST /increment HTTP/1.1" 503 -
+app-1    | 2026-11-16 10:40:40,058 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:40:50,105 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:41:00,172 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:41:10,238 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:41:20,319 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> 	{ ts-ignore-max-val-diff :     0.000000 }
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> 	{ ts-topology-events     :         true }
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> ]
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> Detected redis oss (cluster-enabled=no)
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> Subscribe to ASM events
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> Subscribe to topology changes events
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <timeseries> Enabled diskless replication
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * Module 'timeseries' loaded from /usr/local/lib/redis/modules//redistimeseries.so
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <ReJSON> Created new data type 'ReJSON-RL'
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <ReJSON> version: 81000 git sha: unknown branch: unknown
+app-1    | 2026-11-16 10:41:30,392 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:41:40,454 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <ReJSON> Exported RedisJSON_V1 API
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <ReJSON> Exported RedisJSON_V2 API
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <ReJSON> Exported RedisJSON_V3 API
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <ReJSON> Exported RedisJSON_V4 API
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <ReJSON> Exported RedisJSON_V5 API
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <ReJSON> Exported RedisJSON_V6 API
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <ReJSON> Exported RedisJSON_V7 API
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <ReJSON> Exported RedisJSON_V8 API
+app-1    | 2026-11-16 10:41:50,523 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:42:00,586 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:42:10,647 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:42:20,704 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:42:30,762 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <ReJSON> Enabled diskless replication
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <ReJSON> Initialized shared string cache, thread safe: true.
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * Module 'ReJSON' loaded from /usr/local/lib/redis/modules//rejson.so
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * <search> Acquired RedisJSON_V8 API
+redis-1  | 1:M 16 Nov 2026 10:39:29.093 * Server initialized
+redis-1  | 1:M 16 Nov 2026 10:39:29.094 * <search> LOAD start source=AOF sst=false disk=rebuild-from-keyspace
+redis-1  | 1:M 16 Nov 2026 10:39:29.094 * Reading RDB base file on AOF loading...
+redis-1  | 1:M 16 Nov 2026 10:39:29.094 * Loading RDB produced by version 8.10.3
+redis-1  | 1:M 16 Nov 2026 10:39:29.094 * RDB age 116 seconds
+redis-1  | 1:M 16 Nov 2026 10:39:29.094 * RDB memory usage when created 1.35 Mb
+redis-1  | 1:M 16 Nov 2026 10:39:29.094 * RDB is base AOF
+redis-1  | 1:M 16 Nov 2026 10:39:29.094 * Done loading RDB, keys loaded: 0, keys expired: 0.
+redis-1  | 1:M 16 Nov 2026 10:39:29.094 * <search> Draining workers thread pool with threshold 100
+redis-1  | 1:M 16 Nov 2026 10:39:29.094 * DB loaded from base file appendonly.aof.1.base.rdb: 0.000 seconds
+redis-1  | 1:M 16 Nov 2026 10:39:29.094 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.000 seconds
+redis-1  | 1:M 16 Nov 2026 10:39:29.094 * <search> LOAD end disk=rebuild-from-keyspace ok=true
+redis-1  | 1:M 16 Nov 2026 10:39:29.094 * DB loaded from append only file: 0.001 seconds
+redis-1  | 1:M 16 Nov 2026 10:39:29.095 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+app-1    | 2026-11-16 10:42:40,826 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:42:50,886 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:43:00,947 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:43:08,023 http 192.168.65.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:43:11,006 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:43:21,069 http 127.0.0.1 "GET /healthz HTTP/1.1" 200 -
+redis-1  | 1:M 16 Nov 2026 10:39:29.095 * Ready to accept connections tcp
+redis-1  | 1:M 16 Nov 2026 10:39:29.095 # WARNING: Redis does not require authentication and is not protected by network restrictions. Redis will accept connections from any IP address on any network interface.
+redis-1  | 1:signal-handler (1794825619) Received SIGTERM scheduling shutdown...
+redis-1  | 1:M 16 Nov 2026 10:40:19.421 * User requested shutdown...
+redis-1  | 1:M 16 Nov 2026 10:40:19.421 * Calling fsync() on the AOF file.
+app-1    | 2026-11-16 10:43:21,339 http 192.168.65.1 "GET /healthz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:43:21,357 http 192.168.65.1 "GET /readyz HTTP/1.1" 200 -
+app-1    | 2026-11-16 10:43:21,371 http 192.168.65.1 "POST /increment HTTP/1.1" 200 -
+redis-1  | 1:M 16 Nov 2026 10:40:19.421 * Saving the final RDB snapshot before exiting.
+redis-1  | 1:M 16 Nov 2026 10:40:19.421 * BGSAVE done, 1 keys saved, 0 keys skipped, 115 bytes written.
+redis-1  | 1:M 16 Nov 2026 10:40:19.423 * DB saved on disk
+redis-1  | 1:M 16 Nov 2026 10:40:19.424 # Redis is now ready to exit, bye bye...
+redis-1  | Starting Redis Server
+redis-1  | 1:C 16 Nov 2026 10:40:45.156 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 16 Nov 2026 10:40:45.156 * Redis version=8.10.3, bits=64, commit=00000000, modified=1, pid=1, just started
+redis-1  | 1:C 16 Nov 2026 10:40:45.156 * Configuration loaded
+redis-1  | 1:M 16 Nov 2026 10:40:45.156 * monotonic clock: ARM CNTVCT @ 24 ticks/us
+redis-1  | 1:M 16 Nov 2026 10:40:45.156 * Running mode=standalone, port=6379.
+redis-1  | 1:M 16 Nov 2026 10:40:45.156 * <bf> RedisBloom version 8.10.1 (Git=unknown)
+redis-1  | 1:M 16 Nov 2026 10:40:45.156 * <bf> Registering configuration options: [
+redis-1  | 1:M 16 Nov 2026 10:40:45.156 * <bf> 	{ bf-error-rate       :      0.01 }
+redis-1  | 1:M 16 Nov 2026 10:40:45.156 * <bf> 	{ bf-initial-size     :       100 }
+redis-1  | 1:M 16 Nov 2026 10:40:45.156 * <bf> 	{ bf-expansion-factor :         2 }
+redis-1  | 1:M 16 Nov 2026 10:40:45.156 * <bf> 	{ cf-bucket-size      :         2 }
+redis-1  | 1:M 16 Nov 2026 10:40:45.156 * <bf> 	{ cf-initial-size     :      1024 }
+redis-1  | 1:M 16 Nov 2026 10:40:45.156 * <bf> 	{ cf-max-iterations   :        20 }
+redis-1  | 1:M 16 Nov 2026 10:40:45.156 * <bf> 	{ cf-expansion-factor :         1 }
+redis-1  | 1:M 16 Nov 2026 10:40:45.156 * <bf> 	{ cf-max-expansions   :        32 }
+redis-1  | 1:M 16 Nov 2026 10:40:45.156 * <bf> ]
+redis-1  | 1:M 16 Nov 2026 10:40:45.156 * Module 'bf' loaded from /usr/local/lib/redis/modules//redisbloom.so
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <search> search-workers default: 14 (min of MAX_WORKER_THREADS=16 and CPU cores)
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <search> Redis version found by RedisSearch : 8.10.3 - oss
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <search> RediSearch version 8.10.1 (Git=)
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <search> gc: ON, prefix min length: 2, min word length to stem: 4, prefix max expansions: 200, query timeout (ms): 500, timeout policy: return, oom policy: return, cursor read size: 1000, cursor max idle (ms): 300000, max doctable size: 1000000, max number of search results:  1000000, default scorer: BM25STD, 
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <search> Initialized thread pools!
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <search> Enabled workers threadpool of size 14
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <search> Subscribe to config changes
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <search> Subscribe to cluster slot migration events
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <search> Subscribe to cluster topology change events
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <search> Enabled role change notification
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <search> Cluster configuration: AUTO partitions, type: 0, coordinator timeout: 0ms
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * Module 'search' loaded from /usr/local/lib/redis/modules//redisearch.so
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <timeseries> RedisTimeSeries version 81001, git_sha=
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <timeseries> Redis version found by RedisTimeSeries : 8.10.3 - oss
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <timeseries> Registering configuration options: [
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <timeseries> 	{ ts-compaction-policy   :              }
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <timeseries> 	{ ts-num-threads         :            3 }
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <timeseries> 	{ ts-libmr-protocol      :     INTERNAL }
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <timeseries> 	{ ts-retention-policy    :            0 }
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <timeseries> 	{ ts-duplicate-policy    :        block }
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <timeseries> 	{ ts-chunk-size-bytes    :         4096 }
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <timeseries> 	{ ts-encoding            :   compressed }
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <timeseries> 	{ ts-ignore-max-time-diff:            0 }
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <timeseries> 	{ ts-ignore-max-val-diff :     0.000000 }
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <timeseries> 	{ ts-topology-events     :         true }
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <timeseries> ]
+redis-1  | 1:M 16 Nov 2026 10:40:45.158 * <timeseries> Detected redis oss (cluster-enabled=no)
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <timeseries> Subscribe to ASM events
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <timeseries> Subscribe to topology changes events
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <timeseries> Enabled diskless replication
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * Module 'timeseries' loaded from /usr/local/lib/redis/modules//redistimeseries.so
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <ReJSON> Created new data type 'ReJSON-RL'
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <ReJSON> version: 81000 git sha: unknown branch: unknown
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <ReJSON> Exported RedisJSON_V1 API
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <ReJSON> Exported RedisJSON_V2 API
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <ReJSON> Exported RedisJSON_V3 API
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <ReJSON> Exported RedisJSON_V4 API
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <ReJSON> Exported RedisJSON_V5 API
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <ReJSON> Exported RedisJSON_V6 API
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <ReJSON> Exported RedisJSON_V7 API
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <ReJSON> Exported RedisJSON_V8 API
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <ReJSON> Enabled diskless replication
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <ReJSON> Initialized shared string cache, thread safe: true.
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * Module 'ReJSON' loaded from /usr/local/lib/redis/modules//rejson.so
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <search> Acquired RedisJSON_V8 API
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * Server initialized
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <search> LOAD start source=AOF sst=false disk=rebuild-from-keyspace
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * Reading RDB base file on AOF loading...
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * Loading RDB produced by version 8.10.3
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * RDB age 192 seconds
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * RDB memory usage when created 1.35 Mb
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * RDB is base AOF
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * Done loading RDB, keys loaded: 0, keys expired: 0.
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <search> Draining workers thread pool with threshold 100
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * DB loaded from base file appendonly.aof.1.base.rdb: 0.000 seconds
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * DB loaded from incr file appendonly.aof.1.incr.aof: 0.000 seconds
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * <search> LOAD end disk=rebuild-from-keyspace ok=true
+redis-1  | 1:M 16 Nov 2026 10:40:45.159 * DB loaded from append only file: 0.000 seconds
+redis-1  | 1:M 16 Nov 2026 10:40:45.160 * Opening AOF incr file appendonly.aof.1.incr.aof on server start
+redis-1  | 1:M 16 Nov 2026 10:40:45.160 * Ready to accept connections tcp
+redis-1  | 1:M 16 Nov 2026 10:40:45.160 # WARNING: Redis does not require authentication and is not protected by network restrictions. Redis will accept connections from any IP address on any network interface.

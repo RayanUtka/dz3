@@ -1,0 +1,28 @@
+name: hw_3
+services:
+  app:
+    environment:
+      DATA_FILE: /data/counter.db
+      GREETING: Docker Compose
+      STORAGE: sqlite
+    networks:
+      default: null
+    volumes:
+      - type: volume
+        source: counter-data
+        target: /data
+        volume: {}
+    build:
+      context: /Users/user/missing_semester_hse_cs/2026/amcs/year_1/hw_3
+      dockerfile: Dockerfile
+    ports:
+      - mode: ingress
+        target: 8000
+        published: "8080"
+        protocol: tcp
+networks:
+  default:
+    name: hw_3_default
+volumes:
+  counter-data:
+    name: hw_3_counter-data
